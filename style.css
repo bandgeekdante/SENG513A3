@@ -16,6 +16,7 @@ body {
     display: flex;
 }
 
+/*Mobile devices tend to have a viewport larger than the actual browser size (due to navigation menus on top and/or bottom of the viewport) so the app gets smaller for mobile to look better*/
 @media only screen and (max-width: 500px) and (orientation: portrait) {
     body {
         height: 90vh;
@@ -58,6 +59,7 @@ ul {
     flex-direction: column;
 }
 
+/*Container around lists is necessary due to a Firefox bug*/
 .container {
     height: 100%;
     border: 5px solid darkblue;
