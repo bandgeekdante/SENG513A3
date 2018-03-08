@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+}
+
+body {
+    margin: 0 auto;
+    height: 100vh;
+    font: 13px Helvetica, Arial;
+    display: flex;
+    flex-direction: column;
+}
+
+#top {
+    min-height: 0;
+    height: 100%;
+    display: flex;
+}
+
+@media only screen and (max-width: 500px) and (orientation: portrait) {
+    body {
+        height: 90vh;
+    }
+
+    #top {
+        flex-direction: column-reverse;
+    }
+}
+
+@media only screen and (max-height: 500px) and (orientation: landscape) {
+    body {
+        height: 80vh;
+    }
+}
+
+section {
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+#main {
+    flex: 2 1 67%;
+    min-height: 0;
+    min-width: 0;
+}
+
+header {
+    font-weight: bold;
+}
+
+ul {
+    overflow-y: scroll;
+    max-height: 100%;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    height: 100%;
+    border: 5px solid darkblue;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+li {
+    flex: 1;
+    padding: 5px 10px;
+}
+
+li:nth-child(odd) {
+    background: lightskyblue;
+}
+
+.self {
+    font-weight: bold;
+}
+
+.server {
+    font-style: italic;
+}
+
+#userlist {
+    flex: 1 1 33%;
+    min-height: 0;
+    min-width: 0;
+}
+
+form {
+    flex: 1;
+    border: 5px solid darkblue;
+    border-radius: 5px;
+}
+
+form {
+    display: flex;
+    margin: 5px;
+}
+
+form input {
+    min-width: 0;
+    flex: 1;
+    border: 0;
+    padding: 10px;
+}
+
+form button {
+    background: aqua;
+    border: none;
+    padding: 10px;
+}

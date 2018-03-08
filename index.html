@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Yet Another Chat</title>
+    <link href="/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+<!--<div id="chat">-->
+<div id="top">
+    <section id="main">
+        <header id="yournickname">
+            <span>You are </span><span id="name">connecting..</span><span>.</span>
+        </header>
+        <div class="container">
+            <ul id="messages"></ul>
+        </div>
+    </section>
+    <section id="userlist">
+        <header>
+            User List
+        </header>
+        <div class="container">
+            <ul id="users"></ul>
+        </div>
+    </section>
+</div>
+<div id="bottom">
+    <form action="">
+        <input id="m" autocomplete="off" title="chat input" /><button>Send</button>
+    </form>
+</div>
+<!--</div>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="/client.js"></script>
+</body>
+
+</html>

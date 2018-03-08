@@ -1,0 +1,9 @@
+{
+  "name": "SENG513A3",
+  "version": "0.0.1",
+  "description": "chat with your friends because you don't have enough ways to do that already",
+  "dependencies": {
+    "express": "^4.16.2",
+    "socket.io": "^2.0.4"
+  }
+}
