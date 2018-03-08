@@ -1,7 +1,12 @@
 {
-  "name": "SENG513A3",
-  "version": "0.0.1",
+  "name": "Yet Another Chat",
+  "version": "1.0.0",
+  "license" : "MIT",
   "description": "chat with your friends because you don't have enough ways to do that already",
+  "repository" :
+  { "type" : "git"
+  , "url" : "https://github.com/bandgeekdante/SENG513A3"
+  },
   "dependencies": {
     "express": "^4.16.2",
     "socket.io": "^2.0.4"
